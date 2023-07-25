@@ -1,0 +1,91 @@
+.nav-link:hover {
+    color: #fb4000;
+}
+.nav-link.active {
+    color: #fb4000 !important;
+}
+
+.navbar .navbar-brand {
+    padding: 1.4rem 0 0.3rem 3.3rem;
+}
+.navbar {
+    background-color: white;
+}
+
+body {
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    font-family: "Roboto Light", sans-serif;
+    font-weight: 400;
+}
+
+.navbar-nav{
+    padding : 0;
+    width: 50%;
+    margin-top: 3rem;
+    margin-left:45%;
+}
+
+.main{
+    margin-top: 10rem;
+}
+
+.margin-large {
+    margin-left: 8rem;
+}
+
+.services-list{
+    font:700 2.3rem "Roboto" , sans-serif;
+    list-style-type: none;
+    padding:0;
+    margin-top: 4rem;
+}
+.services-item-selected{
+    color:#fb4000;
+}
+
+@media only screen and (max-width: 1256px) and (min-width: 992px){
+    .services-list{
+        font:700 42px "Roboto" , sans-serif;
+    }
+    .letter{
+        display:none;
+    }
+}
+@media screen and (max-width: 1256px){
+    .letter{
+        display:none;
+    }
+}
+.service-img{
+    max-height: calc(100vh - 16.9rem);
+    min-height: 500px;
+    margin-right:0;
+    object-fit: cover;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.case-btn {
+    background-color: black;
+    text-align: center;
+    font-size: 1rem;
+    color:white;
+    border:none;
+    width: 10rem;
+    height: 2.8rem;
+    margin-left: 8rem;
+}
+.case-btn:hover {
+    background-color: #fb4000;
+}
+
+.letter {
+    max-height: calc(100vh - 16.9rem);
+    min-height: 500px;
+    position:absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%);
+}
