@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 .nav-link:hover {
     color: #fb4000;
 }
@@ -17,12 +18,23 @@ body {
     font-family: "Roboto Light", sans-serif;
     font-weight: 400;
 }
-
+#mobile {
+    overflow-x: hidden;
+    min-width:400px;
+}
 .navbar-nav{
     padding : 0;
     width: 50%;
     margin-top: 3rem;
     margin-left:45%;
+}
+
+.orange{
+    color: #fb4000 !important;
+}
+
+strong {
+    color: #fb4000 !important;
 }
 
 .main{
@@ -42,6 +54,12 @@ body {
 .services-item-selected{
     color:#fb4000;
 }
+#desktop {
+    display: block;
+}
+#mobile {
+    display: none;
+}
 
 @media only screen and (max-width: 1256px) and (min-width: 992px){
     .services-list{
@@ -51,11 +69,8 @@ body {
         display:none;
     }
 }
-@media screen and (max-width: 1256px){
-    .letter{
-        display:none;
-    }
-}
+
+
 .service-img{
     max-height: calc(100vh - 16.9rem);
     min-height: 500px;
@@ -88,4 +103,225 @@ body {
     top: 0;
     left: 0;
     transform: translate(-50%);
+}
+
+.mobile-img-div{
+    margin: 0 1.5rem;
+}
+
+.mobile-text-div{
+    margin: 0 1.5rem;
+}
+
+
+#mobile-img-div1 {
+    background-image:url(https://univisia.com/static/media/startups.7bcdbd83.png);
+    background-position: 50%;
+    background-size:cover;
+    height: 15rem;
+}
+
+#mobile-img-div2 img{
+    width: 25rem;
+    height: 25rem;
+}
+#mobile-img-div2{
+    margin-left:0;
+}
+.margin-top{
+    margin-top: 10rem;
+}
+
+.mobile-description{
+    background-color: white;
+    margin-left: 2rem;
+    padding: 1.5rem;
+
+
+}
+#mobile-text-description1{
+    margin-top: -5rem;
+    width:95vw;
+}
+
+.mobile-title{
+    margin-top: 2rem;
+    background-color: white;
+    width:50%;
+
+}
+
+.description-head{
+    font: 600 25px Roboto;
+    margin-bottom: 2rem;
+}
+.mobile-description p {
+    font: 400 15px Roboto;
+}
+#mobile-text-description2{
+    margin-top: 2rem;
+    width:120%;
+    margin-left:0;
+    position:absolute;
+    left: -25%;
+}
+
+#mobile-img-div3{
+    margin-right:0 !important;
+    width:50%;
+
+}
+#mobile-img-div3 img{
+    width: 25rem;
+    height: 25rem;
+    object-fit: cover;
+    margin-right:0;
+
+}
+
+#mobile-text-title3{
+    position:absolute;
+
+}
+
+#mobile-text-description3{
+    margin-top: 8rem;
+    width: 120%;
+    position: absolute;
+
+}
+
+#mobile-img-div4 {
+    margin-left: 0;
+}
+#mobile-img-div4 img {
+    width: 25rem;
+    height: 25rem;
+}
+
+#mobile-text-description4 {
+    margin-top: 4rem;
+    width:100%;
+    position: absolute;
+    left: -40%;
+}
+#mobile-text-title2{
+    position: relative;
+    width:fit-content;
+}
+#mobile-text-title4{
+    position: relative;
+    width:fit-content;
+}
+
+
+@media screen and (max-width: 1256px){
+    .letter{
+        display:none;
+    }
+}
+
+@media screen and (max-width : 992px){
+    #desktop {
+        display:none;
+    }
+    #mobile{
+        display:block;
+    }
+    .mobile-title{
+        font: 700 40px Roboto;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .mobile-title{
+        font: 700 30px Roboto;
+    }
+    #mobile-img-div2 img{
+        width: 18rem;
+        height: 18rem;
+    }
+    #mobile-img-div3 img{
+        width: 18rem;
+        height: 18rem;
+    }
+    #mobile-img-div4 img{
+        width: 18rem;
+        height: 18rem;
+    }
+    #mobile-text-description2{
+        left: -6rem;
+    }
+    #mobile-text-description3{
+        width:180%;
+        left: -2rem;
+    }
+    #mobile-text-description4{
+        width: 150%;
+        left: -15rem;
+    }
+}
+
+@media screen and (max-width: 576px){
+    #mobile-text-title2{
+        left: -10rem;
+    }
+    #mobile-text-description2{
+        left: -12rem;
+    }
+    #mobile-text-description3{
+        width:180%;
+        left: -4rem;
+    }
+    #mobile-text-description4{
+        width: 180%;
+        left: -15rem;
+    }
+    #mobile-text-title4{
+        left: -7rem;
+    }
+    .mobile-description p{
+        font: 400 11px Roboto;
+    }
+    .description-head{
+        font: 600 15px Roboto;
+    }
+}
+
+.offcanvas-title{
+    font: 700 55px Roboto;
+}
+
+.close_btn {
+    border: none;
+    background-color: white;
+}
+
+.offcanvas-header{
+    width: 90%;
+    border-bottom: 3px solid black ;
+}
+.navLink{
+    font: 700 35px Roboto;
+    margin: 1.5rem 0;
+}
+.navList {
+    list-style-type: none;
+}
+.navSubLink{
+    font: 500 25px Roboto;
+    text-decoration: none;
+    color:black;
+    margin: 0.3rem 0;
+}
+.navSubLink:hover{
+    color: #fb4000;
+}
+.subLink{
+    margin-left:3rem;
+}
+.icon {
+    width: 3rem;
+    height: 3rem;
+    margin-left: 1.7rem;
 }

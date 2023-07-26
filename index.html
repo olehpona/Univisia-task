@@ -9,25 +9,59 @@
 </head>
 <body>
     <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg fixed-top">
-        <a class="navbar-brand active" href="/services" aria-current="page">
-            <img src="https://univisia.com/static/media/logo_univisia.62828f32.svg" alt="Univisia">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <div class="navbar-nav justify-content-between">
-                <a class="nav-link active" aria-current="page" href="#">Services</a>
-                <a class="nav-link" href="#">About</a>
-                <a class="nav-link" href="#">Cases</a>
-                <a class="nav-link" href="#">Careers</a>
-                <a class="nav-link" href="#">Contact</a>
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <a class="navbar-brand active" href="/services" aria-current="page">
+                <img src="https://univisia.com/static/media/logo_univisia.62828f32.svg" alt="Univisia">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu" >
+                <img src="https://univisia.com/static/media/menu_icon.c116f2c9.svg" alt="menu">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <div class="navbar-nav justify-content-between">
+                    <a class="nav-link active" aria-current="page" href="#">Services</a>
+                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="#">Cases</a>
+                    <a class="nav-link" href="#">Careers</a>
+                    <a class="nav-link" href="#">Contact</a>
+                </div>
+            </div>
+        </nav>
+        <div class="offcanvas offcanvas-end w-100 px-5" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+            <div class="offcanvas-header w-100">
+                <h5 class="offcanvas-title" id="offcanvasMenuLabel"><span class="orange">M</span>ENU</h5>
+                <button type="button" class="close_btn" data-bs-dismiss="offcanvas" aria-label="Close">
+                    <img src="https://univisia.com/static/media/close.27024a1b.svg" alt="x">
+                </button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navList">
+                    <li class="navLink orange">SERVICES</li>
+                    <div class="d-flex flex-column subLink">
+                        <a class="navSubLink">Services for Startups</a>
+                        <a class="navSubLink">Website Development</a>
+                        <a class="navSubLink">Website Development</a>
+                        <a class="navSubLink">Tech Staffing</a>
+                    </div>
+                    <li class="navLink">ABOUT</li>
+                    <li class="navLink">CASES</li>
+                    <li class="navLink">CAREERS</li>
+                    <li class="navLink">CONTACT</li>
+                </ul>
+                <div class="d-flex flex-row">
+                    <a>
+                        <img class="icon" src="https://img.icons8.com/?size=512&id=8808&format=png">
+                    </a>
+                    <a>
+                        <img class="icon" src="https://img.icons8.com/?size=512&id=32292&format=png">
+                    </a>
+                    <a>
+                        <img class="icon" src="https://img.icons8.com/?size=512&id=8818&format=png">
+                    </a>
+                </div>
             </div>
         </div>
-    </nav>
     </div>
-    <div class="container-fluid main">
+    <div id="desktop" class="container-fluid main">
         <div class="d-flex flex-row w-100">
             <div class="d-flex flex-column w-50">
                 <ul class="services-list margin-large">
@@ -46,6 +80,87 @@
             <div class="d-flex flex-row w-50 position-relative">
                 <img class="letter" src="https://univisia.com/static/media/S.letter.24d52ecf.svg" alt="S">
                 <img class="w-100 service-img" src="https://univisia.com/static/media/startups.7bcdbd83.png" alt="Services for startups">
+            </div>
+        </div>
+    </div>
+    <div id="mobile" class="container-fluid main">
+        <div>
+            <div class="mobile-img-div" id="mobile-img-div1">
+
+            </div>
+            <div id="mobile-text-div1" class="mobile-text-div d-flex flex-row">
+                <div class="mobile-title" id="mobile-text-title1">
+                    SERVICES FOR <strong>STARTUPS</strong>
+                </div>
+                <div class="mobile-description" id="mobile-text-description1">
+                    <h5 class="description-head">
+                        We understand the
+                        <span class="orange">"start small, scale fast"</span>
+                        principle.
+                    </h5>
+                    <p>
+                        With the power of cloud computing, we help startups reduce the time to market and then scale quickly. Our Azure and Website Development expertise works well for startups in industries like FinTech, AgriTech, BioTech and others. With best practices from Microsoft, our solutions are secure, robust and cost-effective.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="margin-top d-flex flex-row">
+            <div class="mobile-img-div position-relative" id="mobile-img-div2">
+                <img src="https://univisia.com/static/media/websites_cut.67249cab.png">
+            </div>
+            <div id="mobile-text-div2" class="mobile-text-div d-flex flex-column">
+                <div class="mobile-title" id="mobile-text-title2">
+                    <strong>WEBSITE</strong>
+                    DEVELOPMENT
+                </div>
+                <div  class="mobile-description position-relative" id="mobile-text-description2">
+                    <h5 class="description-head">
+                        Our experience in website development
+                        <span class="orange">is tremendous.</span>
+                    </h5>
+                    <p>
+                        We've built plenty of custom solutions for small startups and enterprise projects. The passion for learning new technologies always pushes us to create modern and reliable web applications.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="margin-top d-flex flex-row-reverse">
+            <div class="mobile-img-div position-relative" id="mobile-img-div3">
+                <img src="https://univisia.com/static/media/microsoft.a6fb02c3.png">
+            </div>
+            <div id="mobile-text-div3" class="mobile-text-div position-relative d-flex flex-column w-50">
+                <div class="mobile-title" id="mobile-text-title3">
+                    <strong>AZURE</strong> SERVICES
+                </div>
+                <div  class="mobile-description" id="mobile-text-description3">
+                    <h5 class="description-head">
+                        We practice Azure because we are
+                        <span class="orange">Azure believers.</span>
+                    </h5>
+                    <p>
+                        The range of our Azure services includes migration to Azure, cloud-based websites, serverless apps, CI/CD pipelines configuration and integration of many Azure services like Azure Search, Storage, AppInsights and others. Our deep knowledge of Azure helps build stable and resilient solutions, reduce costs on IT infrastructure and speed up the development cycles.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+        <div class="margin-top d-flex flex-row">
+            <div class="mobile-img-div" id="mobile-img-div4">
+                <img src="https://univisia.com/static/media/staffing.f18d53f9.png">
+            </div>
+            <div  id="mobile-text-div4" class="position-relative mobile-text-div w-50">
+                <div class="mobile-title" id="mobile-text-title4">
+                    <strong>TECH</strong> STAFFING
+                </div>
+                <div  class="mobile-description" id="mobile-text-description4">
+                    <h5 class="description-head w-100">
+                        Sometimes it is challenging to find skilled specialists in your area. That’s where
+                        <span class="orange">we can help.</span>
+                    </h5>
+                    <p class="w-100">
+                        Being located in Lviv/Ukraine and with instant access to an immense pool of professionals, you’ll enjoy the flexibility and how quickly we can increase or decrease the size of the extended team. Our focus is Microsoft stack including C#, SQL Server, EF, Typescript, Azure and Angular. Save time and efforts and delegate us to find and prefilter the best candidates for your needs.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
